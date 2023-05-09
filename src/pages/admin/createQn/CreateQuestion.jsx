@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "../../components/Button";
-import FormInput from "../../components/InputBox";
-import { addQuestion } from "../../redux/createSlicer";
+import Button from "../../../components/Button";
+import FormInput from "../../../components/InputBox";
+import { addQuestion } from "../../../redux/createSlicer";
 import { useDispatch } from "react-redux";
 
 function CreateQuestion() {

@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "../../components/Button";
-import InputBox from "../../components/InputBox";
+import Button from "../../../components/Button";
+import InputBox from "../../../components/InputBox";
 
 function UserLogin() {
   return (
@@ -11,7 +11,7 @@ function UserLogin() {
       <InputBox />
       <Button value={"Submit"} />
       <span>
-        Switch to <Link to="/admin">admin</Link>
+        <Link to="/">Go Back to Homepage</Link>
       </span>
     </div>
   );

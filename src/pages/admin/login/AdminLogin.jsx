@@ -1,5 +1,5 @@
-import Button from "../../components/Button";
-import InputBox from "../../components/InputBox";
+import Button from "../../../components/Button";
+import InputBox from "../../../components/InputBox";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function AdminLogin() {
       />
       <Button clickHandler={clickHandler} value={"Submit"} />
       <span>
-        Switch to <Link to={"/"}>User</Link>
+        <Link to={"/"}>Go Back to Homepage</Link>
       </span>
     </div>
   );
