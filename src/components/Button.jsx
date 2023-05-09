@@ -2,7 +2,9 @@
 export default function Button({ clickHandler, value }) {
   return (
     <>
-      <button onClick={clickHandler}>{value}</button>
+      <button style={{ backgroundColor: "salmon" }} onClick={clickHandler}>
+        {value}
+      </button>
     </>
   );
 }
