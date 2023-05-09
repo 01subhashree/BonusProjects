@@ -4,6 +4,7 @@
     align-items: center;
     width: 100vw;
     flex-direction: column;
+    gap: 1rem;
 }
 .buttons{
     display: flex;

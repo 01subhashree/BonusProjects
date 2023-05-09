@@ -17,6 +17,7 @@ function CreateQuestion() {
 
   function handleQuestionAdd() {
     const questionObj = {
+      id: new Date(),
       Question: questionData,
       Options1: option1,
       Options2: option2,
@@ -59,32 +60,26 @@ function CreateQuestion() {
         <FormInput
           placeholder="Question here..."
           changeHandler={(e) => setQuestion(e.target.value)}
-          type={"text"}
         />
         <FormInput
           placeholder="Option 1"
           changeHandler={(e) => setOption1(e.target.value)}
-          type={"text"}
         />
         <FormInput
           placeholder="Option 2"
           changeHandler={(e) => setOption2(e.target.value)}
-          type={"text"}
         />
         <FormInput
           placeholder="Option 3"
           changeHandler={(e) => setOption3(e.target.value)}
-          type={"text"}
         />
         <FormInput
           placeholder="Option 4"
           changeHandler={(e) => setOption4(e.target.value)}
-          type={"text"}
         />
         <FormInput
           placeholder="Correct option number"
           changeHandler={(e) => setCorrectAnsIdx(e.target.value)}
-          type={"number"}
         />
         <input type="file" onChange={handleImagePick} />
       </div>

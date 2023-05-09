@@ -1,5 +1,6 @@
 const Arraydata = [
   {
+    id: 1,
     Question: "Which of the following is the correct name of React.js?",
     Options1: "React",
     Options2: "React.js",
@@ -8,6 +9,7 @@ const Arraydata = [
     CorrectAnswer: "All of the above",
   },
   {
+    id: 2,
     Question:
       "Which of the following command is used to install create-react-app?",
     Options1: "npm install -g create-react-app",
@@ -17,6 +19,7 @@ const Arraydata = [
     CorrectAnswer: "npm install -g create-react-app",
   },
   {
+    id: 3,
     Question:
       "What of the following is used in React.js to increase performance?",
     Options1: "Original DOM",
@@ -27,6 +30,7 @@ const Arraydata = [
     CorrectAnswer: "Virtual DOM",
   },
   {
+    id: 4,
     Question:
       "A class is a type of function, but instead of using the keyword function to initiate it, which keyword do we use?",
     Options1: "Constructor",
@@ -36,6 +40,7 @@ const Arraydata = [
     CorrectAnswer: "Class",
   },
   {
+    id: 5,
     Question:
       "Which of the following acts as the input of a class-based component?",
     Options1: "Class",
@@ -45,6 +50,7 @@ const Arraydata = [
     CorrectAnswer: "Props",
   },
   {
+    id: 6,
     Question:
       "Which of the following keyword is used to create a class inheritance?",
     Options1: "Create",
@@ -54,6 +60,7 @@ const Arraydata = [
     CorrectAnswer: "Extends",
   },
   {
+    id: 7,
     Question: "What is the default port where webpack-server runs?",
     Options1: 3000,
     Options2: 8080,
@@ -62,6 +69,7 @@ const Arraydata = [
     CorrectAnswer: 8080,
   },
   {
+    id: 8,
     Question:
       "How many numbers of elements a valid react component can return?",
     Options1: 1,
@@ -71,6 +79,7 @@ const Arraydata = [
     CorrectAnswer: 1,
   },
   {
+    id: 9,
     Question: "What is a state in React?",
     Options1: "A permanent storage",
     Options2: "Internal storage of the component",
@@ -80,6 +89,7 @@ const Arraydata = [
     CorrectAnswer: "Internal storage of the component",
   },
   {
+    id: 10,
     Question: "How many ways of defining your variables in ES6?",
     Options1: 1,
     Options2: 3,
@@ -88,5 +98,5 @@ const Arraydata = [
     CorrectAnswer: 3,
   },
 ];
-localStorage.setItem("Questions", JSON.stringify(Arraydata));
+// localStorage.setItem("Questions", JSON.stringify(Arraydata));
 export default Arraydata;
