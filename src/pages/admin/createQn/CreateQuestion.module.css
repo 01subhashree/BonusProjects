@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    gap: 1.2rem;
+    background: linear-gradient(80deg ,rgba(151, 12, 197, 0.778),rgba(25, 62, 64, 0.641));
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

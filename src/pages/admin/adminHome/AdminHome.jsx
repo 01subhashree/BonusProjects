@@ -1,15 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-key */
-import { useState, useEffect } from "react";
 import Button from "../../../components/Button";
 import { useNavigate } from "react-router-dom";
 import style from "./AdminHome.module.css";
-import Arraydata from "../../../components/Questions";
 
 function AdminHome() {
-  useEffect(() => {
-    localStorage.setItem("Questions", JSON.stringify(Arraydata));
-  }, []);
   const finalData = JSON.parse(localStorage.getItem("Questions")) || [];
   const adminData = JSON.parse(localStorage.getItem("adminAuth"));
   const admin = { ...adminData };
@@ -32,7 +27,7 @@ function AdminHome() {
   return (
     <div className={style.mainDiv}>
       <h1>Hii Admin </h1>
-      <span className={style.buttons}>
+      <span>
         <Button value={"Create Question"} clickHandler={clickHandler} />
       </span>
       <span className={style.mainContainer}>
@@ -56,7 +51,9 @@ function AdminHome() {
                   <p>{elem.Options4}</p>
                 </li>
               </ol>
-              <img src={elem.imageData} style={{ width: "200px" }} />
+              <span>
+                <img src={elem.imageData} style={{ width: "200px" }} />
+              </span>
               <span style={{ width: "30vw" }}>
                 <Button
                   className={style.button1}
@@ -68,7 +65,9 @@ function AdminHome() {
           );
         })}
       </span>
-      <Button value={"LogOut"} clickHandler={handelFunction} />
+      <span className={style.buttons}>
+        <Button value={"LogOut"} clickHandler={handelFunction} />
+      </span>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.Box{
+    height: 100vh;
+    background: linear-gradient(48deg ,rgb(197, 12, 12),rgba(196, 14, 126, 0.563));
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90vw;
+    align-items: center;
+
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 1.3rem;
+}
+.mainDiv h3{
+    margin: 0;
+}
+.btnDiv{
+    display: flex;
+    gap: 2rem;
+}
+

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
+import style from "./Home.module.css";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -10,9 +11,11 @@ export default function Home() {
     navigate("/user");
   };
   return (
-    <div>
-      <Button value={"ADMIN"} clickHandler={clickHandlerAdmin} />
-      <Button value={"USER"} clickHandler={clickHandlerUser} />
+    <div className={style.container}>
+      <div className={style.innerContainer}>
+        <Button value={"ADMIN"} clickHandler={clickHandlerAdmin} />
+        <Button value={"USER"} clickHandler={clickHandlerUser} />
+      </div>
     </div>
   );
 }

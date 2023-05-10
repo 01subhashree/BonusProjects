@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "../../../components/Button";
 import FormInput from "../../../components/InputBox";
 import { useNavigate } from "react-router-dom";
+import style from "./CreateQuestion.module.css";
 
 function CreateQuestion() {
   const [questionData, setQuestion] = useState("");
@@ -54,9 +55,9 @@ function CreateQuestion() {
   };
 
   return (
-    <div>
+    <div className={style.box}>
       <h1>question</h1>
-      <div>
+      <div className={style.inputBox}>
         <FormInput
           placeholder="Question here..."
           changeHandler={(e) => setQuestion(e.target.value)}

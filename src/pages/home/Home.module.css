@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.innerContainer{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 47, 79);
+    gap: 5rem;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 20px;
+}

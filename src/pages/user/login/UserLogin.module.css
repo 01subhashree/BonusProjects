@@ -1,0 +1,25 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.Div{
+    display: flex;
+    background-color:  rgb(122, 47, 79);
+    color: aliceblue;
+    height: 50vh;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}

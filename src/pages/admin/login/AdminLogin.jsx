@@ -3,6 +3,7 @@ import InputBox from "../../../components/InputBox";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import style from "./AdminLogin.module.css";
+import Arraydata from "../../../components/Questions";
 
 function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -11,6 +12,7 @@ function AdminLogin() {
 
   function clickHandler() {
     let adminData = { email: email, password: password, isLoggedIn: true };
+    localStorage.setItem("Questions", JSON.stringify(Arraydata));
     localStorage.setItem("adminAuth", JSON.stringify(adminData));
     if (email !== "" && password !== "") {
       navigate("/adminhome");
@@ -20,7 +22,11 @@ function AdminLogin() {
   return (
     <div className={style.Container}>
       <h1>Admin Login</h1>
-      <InputBox value={email} changeHandler={(e) => setEmail(e.target.value)} />
+      <InputBox
+        value={email}
+        changeHandler={(e) => setEmail(e.target.value)}
+        type={"email"}
+      />
       <InputBox
         value={password}
         type={"password"}
