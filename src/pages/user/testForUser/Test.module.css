@@ -1,5 +1,5 @@
 .Box{
-    height: 100vh;
+    height: fit-content;
     background: linear-gradient(48deg ,rgb(197, 12, 12),rgba(196, 14, 126, 0.563));
 }
 .mainContainer{

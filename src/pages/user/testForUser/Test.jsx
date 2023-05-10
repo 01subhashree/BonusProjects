@@ -65,6 +65,12 @@ export default function Test() {
                 </button>
               </div>
               <span>
+                <img
+                  style={{ width: "250px", height: "150px" }}
+                  src={elem.imageData}
+                />
+              </span>
+              <span>
                 <InputBox
                   placeholder="enter your Answer"
                   changeHandler={(e) => setAnswer(e.target.value)}

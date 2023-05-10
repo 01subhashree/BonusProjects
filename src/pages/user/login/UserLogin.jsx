@@ -9,13 +9,16 @@ import Arraydata from "../../../components/Questions";
 function UserLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const localqns = JSON.parse(localStorage.getItem("Questions"));
   const navigate = useNavigate();
   const changePage = () => {
     if (email && password !== "") {
       navigate("/homelogin");
-      localStorage.setItem("Questions", JSON.stringify(Arraydata));
       const userData = { isLogin: true, email: email };
       localStorage.setItem("usersData", JSON.stringify(userData));
+      if (localqns.length == 0) {
+        localStorage.setItem("Questions", JSON.stringify(Arraydata));
+      }
     } else alert("fill All the inputfields");
   };
   return (
